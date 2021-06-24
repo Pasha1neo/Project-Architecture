@@ -1,5 +1,6 @@
 {
 	"SIGNUP_FORM": {
+		"TITLE": "Регистрация",
 		"FIELD": {
 			"LOGIN": {
 				"TITLE": "Логин",
@@ -9,6 +10,17 @@
 				"TITLE": "Пароль",
 				"PLACEHOLDER": "Введите пароль"
 			}
+		},
+		"ERROR": {
+			"REQUIRED_LOGIN": "Необходим логин",
+			"REQUIRED_PASSWORD": "Необходим пароль"
+		},
+		"BUTTON": {
+			"WAITING": "Подождите",
+			"CREATE_ACCOUNT": "Создать аккаунт"
+		},
+		"FOOTER": {
+			"TO_SIGNIN": "Есть аккаунт? "
 		}
 	}
 }

@@ -1,1 +1,0 @@
-export {UsersListComponent} from './userslist.component'

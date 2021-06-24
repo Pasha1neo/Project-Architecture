@@ -1,18 +1,23 @@
 import styled from 'styled-components';
-import { spacing } from '../../theme'
+import { text } from '../../common/text';
+import { spacing, THEME_BORDER, THEME_COLOR } from '../../theme';
 
 // Чёт в голову не приходит чё ещё можно впихнуть сюда
-export function ButtonSuccess({successing, type='button', children, disabledFn=null,}) {
-	return (
-		<Button type={type} disabled={disabledFn}>
-			{successing ? 'Подождите' : children}
-		</Button>
-	)
-} 
+export function ButtonSuccess({
+  type = 'button',
+  children,
+  disabledFn = null,
+}) {
+  return (
+    <Button type={type} disabled={disabledFn}>
+      {text(children)}
+    </Button>
+  );
+}
 
 const Button = styled.button`
-background: linear-gradient(160.64deg, #2D9CDB 0%, #0098EE 0.01%, #54B6ED 100%);
-border-radius: 5px;
-padding: ${spacing(3)};
-color: white;
-`
+  background: ${THEME_COLOR.BUTTON_PRIMARY};
+  border-radius: ${THEME_BORDER.RADIUS.PRIMARY};
+  padding: ${spacing(3)};
+  color: ${THEME_COLOR.DEFAULT};
+`;
